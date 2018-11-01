@@ -1,0 +1,271 @@
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+
+<?import javafx.scene.control.Button?>
+<Pane fx:controller="uttt.Controller" xmlns:fx="http://javafx.com/fxml" prefWidth="540" prefHeight="540">
+    <Line startX="10" startY="180" endX="530" endY="180" strokeWidth="2.0"/>
+    <Line startX="10" startY="360" endX="530" endY="360" strokeWidth="2.0"/>
+    <Line startX="180" startY="10" endX="180" endY="530" strokeWidth="2.0"/>
+    <Line startX="360" startY="10" endX="360" endY="530" strokeWidth="2.0"/>
+    <GridPane fx:id="board">
+        <columnConstraints>
+            <ColumnConstraints prefWidth="180"/>
+            <ColumnConstraints prefWidth="180"/>
+            <ColumnConstraints prefWidth="180"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints prefHeight="180"/>
+            <RowConstraints prefHeight="180"/>
+            <RowConstraints prefHeight="180"/>
+        </rowConstraints>
+        <Pane GridPane.rowIndex="0" GridPane.columnIndex="0">
+            <Line startX="10"  startY="60"  endX="170" endY="60" />
+            <Line startX="10"  startY="120" endX="170" endY="120"/>
+            <Line startX="60"  startY="10"  endX="60"  endY="170"/>
+            <Line startX="120" startY="10"  endX="120" endY="170"/>
+            <GridPane>
+                <columnConstraints>
+                    <ColumnConstraints prefWidth="60"/>
+                    <ColumnConstraints prefWidth="60"/>
+                    <ColumnConstraints prefWidth="60"/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints prefHeight="60"/>
+                    <RowConstraints prefHeight="60"/>
+                    <RowConstraints prefHeight="60"/>
+                </rowConstraints>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+            </GridPane>
+        </Pane>
+        <Pane GridPane.rowIndex="0" GridPane.columnIndex="1">
+            <Line startX="10"  startY="60"  endX="170" endY="60" />
+            <Line startX="10"  startY="120" endX="170" endY="120"/>
+            <Line startX="60"  startY="10"  endX="60"  endY="170"/>
+            <Line startX="120" startY="10"  endX="120" endY="170"/>
+            <GridPane>
+                <columnConstraints>
+                    <ColumnConstraints prefWidth="60"/>
+                    <ColumnConstraints prefWidth="60"/>
+                    <ColumnConstraints prefWidth="60"/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints prefHeight="60"/>
+                    <RowConstraints prefHeight="60"/>
+                    <RowConstraints prefHeight="60"/>
+                </rowConstraints>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+            </GridPane>
+        </Pane>
+        <Pane GridPane.rowIndex="0" GridPane.columnIndex="2">
+            <Line startX="10"  startY="60"  endX="170" endY="60" />
+            <Line startX="10"  startY="120" endX="170" endY="120"/>
+            <Line startX="60"  startY="10"  endX="60"  endY="170"/>
+            <Line startX="120" startY="10"  endX="120" endY="170"/>
+            <GridPane>
+                <columnConstraints>
+                    <ColumnConstraints prefWidth="60"/>
+                    <ColumnConstraints prefWidth="60"/>
+                    <ColumnConstraints prefWidth="60"/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints prefHeight="60"/>
+                    <RowConstraints prefHeight="60"/>
+                    <RowConstraints prefHeight="60"/>
+                </rowConstraints>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+            </GridPane>
+        </Pane>
+        <Pane GridPane.rowIndex="1" GridPane.columnIndex="0">
+            <Line startX="10"  startY="60"  endX="170" endY="60" />
+            <Line startX="10"  startY="120" endX="170" endY="120"/>
+            <Line startX="60"  startY="10"  endX="60"  endY="170"/>
+            <Line startX="120" startY="10"  endX="120" endY="170"/>
+            <GridPane>
+                <columnConstraints>
+                    <ColumnConstraints prefWidth="60"/>
+                    <ColumnConstraints prefWidth="60"/>
+                    <ColumnConstraints prefWidth="60"/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints prefHeight="60"/>
+                    <RowConstraints prefHeight="60"/>
+                    <RowConstraints prefHeight="60"/>
+                </rowConstraints>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+            </GridPane>
+        </Pane>
+
+        <Pane GridPane.rowIndex="1" GridPane.columnIndex="1">
+            <Line startX="10"  startY="60"  endX="170" endY="60" />
+            <Line startX="10"  startY="120" endX="170" endY="120"/>
+            <Line startX="60"  startY="10"  endX="60"  endY="170"/>
+            <Line startX="120" startY="10"  endX="120" endY="170"/>
+            <GridPane>
+                <columnConstraints>
+                    <ColumnConstraints prefWidth="60"/>
+                    <ColumnConstraints prefWidth="60"/>
+                    <ColumnConstraints prefWidth="60"/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints prefHeight="60"/>
+                    <RowConstraints prefHeight="60"/>
+                    <RowConstraints prefHeight="60"/>
+                </rowConstraints>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+            </GridPane>
+        </Pane>
+        <Pane GridPane.rowIndex="1" GridPane.columnIndex="2">
+            <Line startX="10"  startY="60"  endX="170" endY="60" />
+            <Line startX="10"  startY="120" endX="170" endY="120"/>
+            <Line startX="60"  startY="10"  endX="60"  endY="170"/>
+            <Line startX="120" startY="10"  endX="120" endY="170"/>
+            <GridPane>
+                <columnConstraints>
+                    <ColumnConstraints prefWidth="60"/>
+                    <ColumnConstraints prefWidth="60"/>
+                    <ColumnConstraints prefWidth="60"/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints prefHeight="60"/>
+                    <RowConstraints prefHeight="60"/>
+                    <RowConstraints prefHeight="60"/>
+                </rowConstraints>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+            </GridPane>
+        </Pane>
+        <Pane GridPane.rowIndex="2" GridPane.columnIndex="0">
+            <Line startX="10"  startY="60"  endX="170" endY="60" />
+            <Line startX="10"  startY="120" endX="170" endY="120"/>
+            <Line startX="60"  startY="10"  endX="60"  endY="170"/>
+            <Line startX="120" startY="10"  endX="120" endY="170"/>
+            <GridPane>
+                <columnConstraints>
+                    <ColumnConstraints prefWidth="60"/>
+                    <ColumnConstraints prefWidth="60"/>
+                    <ColumnConstraints prefWidth="60"/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints prefHeight="60"/>
+                    <RowConstraints prefHeight="60"/>
+                    <RowConstraints prefHeight="60"/>
+                </rowConstraints>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+            </GridPane>
+        </Pane>
+        <Pane GridPane.rowIndex="2" GridPane.columnIndex="1">
+            <Line startX="10"  startY="60"  endX="170" endY="60" />
+            <Line startX="10"  startY="120" endX="170" endY="120"/>
+            <Line startX="60"  startY="10"  endX="60"  endY="170"/>
+            <Line startX="120" startY="10"  endX="120" endY="170"/>
+            <GridPane>
+                <columnConstraints>
+                    <ColumnConstraints prefWidth="60"/>
+                    <ColumnConstraints prefWidth="60"/>
+                    <ColumnConstraints prefWidth="60"/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints prefHeight="60"/>
+                    <RowConstraints prefHeight="60"/>
+                    <RowConstraints prefHeight="60"/>
+                </rowConstraints>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+            </GridPane>
+        </Pane>
+        <Pane GridPane.rowIndex="2" GridPane.columnIndex="2">
+            <Line startX="10"  startY="60"  endX="170" endY="60" />
+            <Line startX="10"  startY="120" endX="170" endY="120"/>
+            <Line startX="60"  startY="10"  endX="60"  endY="170"/>
+            <Line startX="120" startY="10"  endX="120" endY="170"/>
+            <GridPane>
+                <columnConstraints>
+                    <ColumnConstraints prefWidth="60"/>
+                    <ColumnConstraints prefWidth="60"/>
+                    <ColumnConstraints prefWidth="60"/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints prefHeight="60"/>
+                    <RowConstraints prefHeight="60"/>
+                    <RowConstraints prefHeight="60"/>
+                </rowConstraints>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="0" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="1" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+                <Button GridPane.rowIndex="2" GridPane.columnIndex="2" prefHeight="60" prefWidth="60" onMouseClicked="#mouseClicked"/>
+            </GridPane>
+        </Pane>
+    </GridPane>
+</Pane>
