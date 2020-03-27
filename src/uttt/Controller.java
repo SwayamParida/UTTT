@@ -14,13 +14,16 @@ import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.CornerRadii;
 import javafx.scene.paint.Color;
 
+import java.net.URISyntaxException;
 import java.util.Scanner;
 
 public class Controller {
 
     public static final int DIMENSION = 3;
-    public static final String CROSS_IMAGE = "cross.png";
-    public static final String NOUGHT_IMAGE = "nought.png";
+    public static final String CROSS_FILEPATH = "cross.png";
+    public static final String NOUGHT_FILEPATH = "nought.png";
+    public static Image CROSS_IMAGE;
+    public static Image NOUGHT_IMAGE;
 
     private enum Player { HUMAN, AI };
     private AI computerPlayer;
@@ -29,9 +32,11 @@ public class Controller {
     private GlobalGrid globalGrid;
     @FXML private GridPane board;
 
-    public Controller() {
+    public Controller() throws URISyntaxException {
         globalGrid = new GlobalGrid(DIMENSION, LocalGrid.Symbol.CROSS);
         curPlayer = Player.HUMAN;
+        CROSS_IMAGE = new Image(getClass().getResource(CROSS_FILEPATH).toURI().toString());
+        NOUGHT_IMAGE = new Image(getClass().getResource(NOUGHT_FILEPATH).toURI().toString());
     }
 
     @FXML private void initialize() {
@@ -61,7 +66,7 @@ public class Controller {
         // Display a message when the game is over
         if (globalGrid.isGameOver()) {
             clearAllHighlightedPanes();
-            String winnerMessage = new String();
+            String winnerMessage;
             switch ((globalGrid.winner())) {
                 case CROSS:
                     winnerMessage = "X wins";
@@ -168,10 +173,10 @@ public class Controller {
     private void setImage(ImageView imageView, LocalGrid.Symbol symbol) {
         switch (symbol) {
             case NOUGHT:
-                imageView.setImage(new Image(NOUGHT_IMAGE));
+                imageView.setImage(NOUGHT_IMAGE);
                 break;
             case CROSS:
-                imageView.setImage(new Image(CROSS_IMAGE));
+                imageView.setImage(CROSS_IMAGE);
                 break;
         }
     }
